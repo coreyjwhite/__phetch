@@ -1,0 +1,899 @@
+[
+  {
+    "omni_stid": "ETCPM",
+    "item_id": "CHOL10SYR",
+    "rx_disp": "cholecalciferoL 400 units 10mcg/1mL 1mL SYR",
+    "alias": "Vitamin D3",
+    "ctrl_lvl": "6",
+    "expiration": "2021-12-16T00:00:00.000Z",
+    "qty": {
+      "onhand": 182,
+      "parlvl": 180,
+      "min": 90,
+      "alarm": 45
+    },
+    "orders": {
+      "routine": 6
+    },
+    "usage": {
+      "average": 5.8571428571,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 7
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 6
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 8
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 4
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 6
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCPM",
+    "item_id": "EPIN30D5DC",
+    "rx_disp": "EPINEPHrine 30 mg/D5W 100 mL/Dr 100mL KIT",
+    "alias": "EPINEPHrine Drip Kit",
+    "ctrl_lvl": "6",
+    "expiration": null,
+    "qty": {
+      "onhand": 4,
+      "parlvl": 4,
+      "min": 2,
+      "alarm": 0
+    },
+    "orders": null,
+    "usage": {
+      "average": 0.2857142857,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 0
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCPM",
+    "item_id": "EPINE2PACK",
+    "rx_disp": "EPINEPHrine 1mg VIAL (x2) w/ 25G ne 2mL KIT",
+    "alias": "EPINEPHrine Allergy Kit",
+    "ctrl_lvl": "6",
+    "expiration": null,
+    "qty": {
+      "onhand": 15,
+      "parlvl": 15,
+      "min": 5,
+      "alarm": 1
+    },
+    "orders": null,
+    "usage": {
+      "average": 0,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 0
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCPM",
+    "item_id": "MANNFILTER",
+    "rx_disp": "mannitoL 20% 500mL bag with Filter S 500mL KIT",
+    "alias": "mannitoL Drip Kit",
+    "ctrl_lvl": "6",
+    "expiration": null,
+    "qty": {
+      "onhand": 4,
+      "parlvl": 4,
+      "min": 2,
+      "alarm": 0
+    },
+    "orders": null,
+    "usage": null
+  },
+  {
+    "omni_stid": "ETCPM",
+    "item_id": "POLYVSS",
+    "rx_disp": "Multivitamins/Iron 0.5mL SYR",
+    "alias": "Poly-Vi-Sol with Iron",
+    "ctrl_lvl": "6",
+    "expiration": "2021-11-24T00:00:00.000Z",
+    "qty": {
+      "onhand": 148,
+      "parlvl": 160,
+      "min": 80,
+      "alarm": 40
+    },
+    "orders": {
+      "routine": 3
+    },
+    "usage": {
+      "average": 3.4285714286,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 4
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 3
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCPM",
+    "item_id": "RIML500ED",
+    "rx_disp": "cefTRIAXone IM/Lido 1% 500mg/1mL 2mL KIT",
+    "alias": "Rocephin/Lidocaine IM Kit",
+    "ctrl_lvl": "6",
+    "expiration": null,
+    "qty": {
+      "onhand": 35,
+      "parlvl": 30,
+      "min": 15,
+      "alarm": 0
+    },
+    "orders": null,
+    "usage": {
+      "average": 0.5714285714,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 2
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 0
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCPM",
+    "item_id": "SIMES",
+    "rx_disp": "Simethicone 20mg/0.3mL 0.3mL SYR",
+    "alias": "Mylicon",
+    "ctrl_lvl": "6",
+    "expiration": "2022-01-02T00:00:00.000Z",
+    "qty": {
+      "onhand": 308,
+      "parlvl": 320,
+      "min": 160,
+      "alarm": 80
+    },
+    "orders": {
+      "prn": 64
+    },
+    "usage": {
+      "average": 33.5714285714,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 43
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 35
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 29
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 25
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 32
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 33
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 38
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "DIAZ1MLSYR",
+    "rx_disp": "diazePAM (Oral) 5mg/1mL 1mL CUP",
+    "alias": "Valium (Oral)",
+    "ctrl_lvl": "4",
+    "expiration": "2021-12-01T00:00:00.000Z",
+    "qty": {
+      "onhand": 43,
+      "parlvl": 40,
+      "min": 20,
+      "alarm": 10
+    },
+    "orders": null,
+    "usage": {
+      "average": 1.1428571429,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 4
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 0
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "GABAUDCUP",
+    "rx_disp": "Gabapentin 250mg/5mL 5mL CUP",
+    "alias": "Neurontin",
+    "ctrl_lvl": "5",
+    "expiration": null,
+    "qty": {
+      "onhand": 108,
+      "parlvl": 80,
+      "min": 40,
+      "alarm": 20
+    },
+    "orders": {
+      "routine": 3
+    },
+    "usage": {
+      "average": 3.2857142857,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 4
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 2
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 2
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 2
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 5
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "HYDRLUDC",
+    "rx_disp": "HYDROmorphone 1mg/1mL 1mL CUP",
+    "alias": "Dilaudid                                        ",
+    "ctrl_lvl": "2",
+    "expiration": null,
+    "qty": {
+      "onhand": 58,
+      "parlvl": 20,
+      "min": 10,
+      "alarm": 5
+    },
+    "orders": {
+      "prn": 1
+    },
+    "usage": {
+      "average": 0.2857142857,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 2
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "KETOFOL",
+    "rx_disp": "ketamine/propofoL 200mg KIT",
+    "alias": "ketofoL Kit",
+    "ctrl_lvl": "3",
+    "expiration": null,
+    "qty": {
+      "onhand": 21,
+      "parlvl": 20,
+      "min": 10,
+      "alarm": 3
+    },
+    "orders": null,
+    "usage": {
+      "average": 2.4285714286,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 7
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 6
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 2
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "METH1MLS",
+    "rx_disp": "Methadone 2mg/1mL 1mL CUP",
+    "alias": "Dolophine",
+    "ctrl_lvl": "2",
+    "expiration": null,
+    "qty": {
+      "onhand": 138,
+      "parlvl": 150,
+      "min": 70,
+      "alarm": 20
+    },
+    "orders": {
+      "routine": 5
+    },
+    "usage": {
+      "average": 6,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 10
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 6
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 6
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 5
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "METH5MLS",
+    "rx_disp": "Methadone 2mg/1mL 5mL CUP",
+    "alias": "Dolophine",
+    "ctrl_lvl": "2",
+    "expiration": null,
+    "qty": {
+      "onhand": 179,
+      "parlvl": 180,
+      "min": 90,
+      "alarm": 30
+    },
+    "orders": null,
+    "usage": {
+      "average": 3.7142857143,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 4
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 4
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 4
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 3
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "MIDA3.75ML",
+    "rx_disp": "Midazolam (Oral) 2mg/1mL 3.75mL SYR",
+    "alias": "Versed (Oral)",
+    "ctrl_lvl": "4",
+    "expiration": "2021-12-20T00:00:00.000Z",
+    "qty": {
+      "onhand": 80,
+      "parlvl": 100,
+      "min": 50,
+      "alarm": 20
+    },
+    "orders": null,
+    "usage": {
+      "average": 5.8571428571,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 17
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 6
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 5
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 11
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 2
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "MIDA5ML",
+    "rx_disp": "Midazolam (Oral) 2mg/1mL 5mL SYR",
+    "alias": "Versed (Oral)",
+    "ctrl_lvl": "4",
+    "expiration": "2021-11-29T00:00:00.000Z",
+    "qty": {
+      "onhand": 83,
+      "parlvl": 100,
+      "min": 50,
+      "alarm": 0
+    },
+    "orders": null,
+    "usage": {
+      "average": 4.8571428571,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 9
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 6
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 7
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 9
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "MIDA6.25ML",
+    "rx_disp": "Midazolam (Oral) 2mg/1mL 6.25mL SYR",
+    "alias": "Versed (Oral)",
+    "ctrl_lvl": "4",
+    "expiration": "2021-10-27T00:00:00.000Z",
+    "qty": {
+      "onhand": 81,
+      "parlvl": 100,
+      "min": 50,
+      "alarm": 25
+    },
+    "orders": null,
+    "usage": {
+      "average": 1,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 2
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 1
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 2
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 1
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "MIDA7.5ML",
+    "rx_disp": "Midazolam (Oral) 2mg/1mL 7.5mL SYR",
+    "alias": "Versed (Oral)",
+    "ctrl_lvl": "4",
+    "expiration": "2021-11-01T00:00:00.000Z",
+    "qty": {
+      "onhand": 82,
+      "parlvl": 100,
+      "min": 50,
+      "alarm": 0
+    },
+    "orders": null,
+    "usage": {
+      "average": 1.4285714286,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 4
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 2
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 0
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 3
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 1
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "MORP.1L",
+    "rx_disp": "Morphine Sulfate 100mcg/0.5mL 0.5mL CUP",
+    "alias": null,
+    "ctrl_lvl": "2",
+    "expiration": "2021-11-12T00:00:00.000Z",
+    "qty": {
+      "onhand": 874,
+      "parlvl": 1000,
+      "min": 500,
+      "alarm": 200
+    },
+    "orders": {
+      "prn": 0,
+      "routine": 48
+    },
+    "usage": {
+      "average": 36.5714285714,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 63
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 57
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 27
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 18
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 22
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 25
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 44
+        }
+      ]
+    }
+  },
+  {
+    "omni_stid": "ETCSM",
+    "item_id": "PHEN20SO",
+    "rx_disp": "PHENobarbitaL 20mg/5mL 5mL CUP",
+    "alias": null,
+    "ctrl_lvl": "4",
+    "expiration": null,
+    "qty": {
+      "onhand": 139,
+      "parlvl": 170,
+      "min": 85,
+      "alarm": 45
+    },
+    "orders": {
+      "routine": 9
+    },
+    "usage": {
+      "average": 9.8571428571,
+      "daily": [
+        {
+          "day": "2021-10-06T00:00:00.000Z",
+          "qty": 10
+        },
+        {
+          "day": "2021-10-07T00:00:00.000Z",
+          "qty": 9
+        },
+        {
+          "day": "2021-10-08T00:00:00.000Z",
+          "qty": 10
+        },
+        {
+          "day": "2021-10-09T00:00:00.000Z",
+          "qty": 9
+        },
+        {
+          "day": "2021-10-10T00:00:00.000Z",
+          "qty": 9
+        },
+        {
+          "day": "2021-10-11T00:00:00.000Z",
+          "qty": 11
+        },
+        {
+          "day": "2021-10-12T00:00:00.000Z",
+          "qty": 11
+        }
+      ]
+    }
+  }
+]

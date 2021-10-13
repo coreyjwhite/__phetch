@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> components/layout/NavAccordion.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/coreyjwhite/phetch"
+                        >
+                            Github
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-_app.html">_app</a></li><li><a href="module-_document.html">_document</a></li><li><a href="module-Config.html">Config</a></li><li><a href="module-demoTableData.html">demoTableData</a></li><li><a href="module-Palette.html">Palette</a></li><li><a href="module-Spaces.html">Spaces</a></li><li><a href="module-states.html">states</a></li></ul></div><div class="category"><h2>Containers</h2><h3>Modules</h3><ul><li><a href="module-Card.html">Card</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Lozenge.html">Lozenge</a></li><li><a href="module-Modal.html">Modal</a></li><li><a href="module-Row.html">Row</a></li><li><a href="module-Tooltip.html">Tooltip</a></li></ul></div><div class="category"><h2>Data</h2><h3>Modules</h3><ul><li><a href="module-ControlLevel.html">ControlLevel</a></li><li><a href="module-InventoryProgress.html">InventoryProgress</a></li><li><a href="module-InventorySparkline.html">InventorySparkline</a></li><li><a href="module-InventoryTooltip.html">InventoryTooltip</a></li><li><a href="module-KpiCard.html">KpiCard</a></li><li><a href="module-Table.html">Table</a></li></ul></div><div class="category"><h2>Inputs</h2><h3>Modules</h3><ul><li><a href="module-Button.html">Button</a></li><li><a href="module-Checkbox.html">Checkbox</a></li><li><a href="module-InputLabel.html">InputLabel</a></li><li><a href="module-Select.html">Select</a></li><li><a href="module-Textarea.html">Textarea</a></li><li><a href="module-Textbox.html">Textbox</a></li><li><a href="module-Toggle.html">Toggle</a></li></ul></div><div class="category"><h2>Layout</h2><h3>Modules</h3><ul><li><a href="module-Brand.html">Brand</a></li><li><a href="module-Content.html">Content</a></li><li><a href="module-Layout.html">Layout</a></li><li><a href="module-LoadingPage.html">LoadingPage</a></li><li><a href="module-NavAccordion.html">NavAccordion</a></li><li><a href="module-NavMenu.html">NavMenu</a></li><li><a href="module-Page.html">Page</a></li><li><a href="module-Topbar.html">Topbar</a></li></ul></div><div class="category"><h2>Page</h2><h3>Modules</h3><ul><li><a href="module-loading.html">loading</a></li></ul></div><div class="category"><h2>Pages</h2><h3>Modules</h3><ul><li><a href="module-index.html">index</a></li></ul></div><div class="category"><h2>Styling</h2><h3>Modules</h3><ul><li><a href="module-Color.html">Color</a></li><li><a href="module-Global.html">Global</a></li><li><a href="module-Measures.html">Measures</a></li><li><a href="module-Styles.html">Styles</a></li></ul></div><div class="category"><h2>Utilities</h2><h3>Modules</h3><ul><li><a href="module-camelize.html">camelize</a></li><li><a href="module-useOutsideClickListener.html">useOutsideClickListener</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/layout/NavAccordion.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module NavAccordion
+ * @category Layout
+ * @description Expanding groups of Next links for
+ * {@link module:NavMenu|&lt;NavMenu>}
+ */
+import { useState } from "react";
+import PropTypes from "prop-types";
+import Image from "next/image";
+import Link from "next/link";
+import styled from "styled-components";
+import config from "config";
+import camelize from "libs/camelize";
+import c from "styles/color";
+import m from "styles/measures";
+import Column from "components/containers/Column";
+
+const StyledDiv = styled.div.attrs({
+  id: "navAccordion",
+  className: "navAccordion",
+})`
+  display: flex;
+  width: ${m.col12};
+  height: fit-content;
+  flex-direction: column;
+  margin: ${m.sp4};
+  -ms-overflow-style: none; /* hide scrollbar in Internet Explorer, Edge */
+  overflow-y: auto;
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+  ::-webkit-scrollbar {
+    display: none; /* hide scrollbar in Chrome, Safari, and Opera */
+  }
+  transition: 0.2s;
+  @media (min-width: ${m.devMd}) {
+    height: 100%;
+    padding: ${m.sp5} 0;
+  }
+`;
+
+const NavGroup = styled.div.attrs((props) => ({
+  id: `${camelize(props.label)}NavGroup`,
+  className: "navGroup",
+}))`
+  display: flex;
+  width: ${m.col12};
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  padding: 0;
+  border: none;
+  margin: 0 0 ${m.sp6} 0;
+  background-color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+  p {
+    margin: ${`0 0 ${m.sp3} ${m.sp5}`};
+    color: ${c.primary8};
+    font-size: 1.3rem;
+    @media (min-width: ${m.devMd}) {
+      font-size: 1rem;
+    }
+  }
+  a {
+    height: ${(props) => (props.visible ? "1.2rem" : "0px")};
+    margin: ${(props) =>
+      props.visible ? `${m.sp3} 0 ${m.sp3} ${m.sp6}` : "0"};
+    color: ${c.primary8};
+    font-size: 1.2rem;
+    transition: height 0.3s ease-in-out, visibility 0s;
+    visibility: ${(props) => (props.visible ? "visible" : "hidden")};
+    @media (min-width: ${m.devMd}) {
+      height: ${(props) => (props.visible ? "1rem" : "0px")};
+      font-size: 1rem;
+    }
+  }
+  p:hover,
+  a:hover {
+    color: ${c.primary6};
+    transition: 0s;
+  }
+`;
+
+export default function NavAccordion(props) {
+  const [navGroupIsOpen, setNavGroupIsOpen] = useState(null);
+
+  return (
+    &lt;StyledDiv>
+      {config.navTree.map(([group, icon, links]) => (
+        &lt;NavGroup
+          key={group}
+          onClick={() =>
+            setNavGroupIsOpen(navGroupIsOpen === group ? null : group)
+          }
+          visible={navGroupIsOpen === group}
+          label={group}
+        >
+          &lt;Image src={icon} height={20} width={20} alt="Menu icon" />
+          &lt;Column
+            label={`${camelize(group)}NavGroup`}
+            width={m.col12}
+            align="stretch"
+          >
+            &lt;p>{group}&lt;/p>
+            {links.map(([title, href]) => (
+              &lt;Link
+                href={href}
+                key={title}
+                passHref
+                styles={{ display: navGroupIsOpen ? "inline" : "none" }}
+              >
+                &lt;a onClick={() => props.handleLinkClick(false)}>{title}&lt;/a>
+              &lt;/Link>
+            ))}
+          &lt;/Column>
+        &lt;/NavGroup>
+      ))}
+    &lt;/StyledDiv>
+  );
+}
+
+NavAccordion.propTypes = {
+  handleLinkClick: PropTypes.func,
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+</body>
+</html>

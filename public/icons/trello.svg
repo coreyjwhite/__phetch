@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 24 24"
+   width="24"
+   height="24"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="trello.svg"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="12"
+     inkscape:cy="11.949153"
+     inkscape:window-width="1536"
+     inkscape:window-height="967"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     fill="none"
+     d="M0 0h24v24H0z"
+     id="path2" />
+  <path
+     d="M 2.9656569,2.9091611 V 21.284161 H 21.340657 V 2.9091611 Z m 0,-2.62500003 H 21.340657 a 2.625,2.625 0 0 1 2.625,2.62500003 V 21.284161 a 2.625,2.625 0 0 1 -2.625,2.625 H 2.9656569 a 2.625,2.625 0 0 1 -2.62500004,-2.625 V 2.9091611 A 2.625,2.625 0 0 1 2.9656569,0.28416107 Z m 3.9375,5.25000003 h 2.625 a 1.3125,1.3125 0 0 1 1.3125001,1.3125 V 17.346661 a 1.3125,1.3125 0 0 1 -1.3125001,1.3125 h -2.625 a 1.3125,1.3125 0 0 1 -1.3125,-1.3125 V 6.8466611 a 1.3125,1.3125 0 0 1 1.3125,-1.3125 z m 7.8750001,0 h 2.625 a 1.3125,1.3125 0 0 1 1.3125,1.3125 v 5.2499999 a 1.3125,1.3125 0 0 1 -1.3125,1.3125 h -2.625 a 1.3125,1.3125 0 0 1 -1.3125,-1.3125 V 6.8466611 a 1.3125,1.3125 0 0 1 1.3125,-1.3125 z"
+     fill="rgba(255,255,255,1)"
+     id="path4"
+     style="stroke-width:.75;fill:#ffffff" />
+</svg>

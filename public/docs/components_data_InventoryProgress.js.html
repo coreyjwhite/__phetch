@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> components/data/InventoryProgress.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/coreyjwhite/phetch"
+                        >
+                            Github
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-_app.html">_app</a></li><li><a href="module-_document.html">_document</a></li><li><a href="module-Config.html">Config</a></li><li><a href="module-demoTableData.html">demoTableData</a></li><li><a href="module-Palette.html">Palette</a></li><li><a href="module-Spaces.html">Spaces</a></li><li><a href="module-states.html">states</a></li></ul></div><div class="category"><h2>Containers</h2><h3>Modules</h3><ul><li><a href="module-Card.html">Card</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Lozenge.html">Lozenge</a></li><li><a href="module-Modal.html">Modal</a></li><li><a href="module-Row.html">Row</a></li><li><a href="module-Tooltip.html">Tooltip</a></li></ul></div><div class="category"><h2>Data</h2><h3>Modules</h3><ul><li><a href="module-ControlLevel.html">ControlLevel</a></li><li><a href="module-InventoryProgress.html">InventoryProgress</a></li><li><a href="module-InventorySparkline.html">InventorySparkline</a></li><li><a href="module-InventoryTooltip.html">InventoryTooltip</a></li><li><a href="module-KpiCard.html">KpiCard</a></li><li><a href="module-Table.html">Table</a></li></ul></div><div class="category"><h2>Inputs</h2><h3>Modules</h3><ul><li><a href="module-Button.html">Button</a></li><li><a href="module-Checkbox.html">Checkbox</a></li><li><a href="module-InputLabel.html">InputLabel</a></li><li><a href="module-Select.html">Select</a></li><li><a href="module-Textarea.html">Textarea</a></li><li><a href="module-Textbox.html">Textbox</a></li><li><a href="module-Toggle.html">Toggle</a></li></ul></div><div class="category"><h2>Layout</h2><h3>Modules</h3><ul><li><a href="module-Brand.html">Brand</a></li><li><a href="module-Content.html">Content</a></li><li><a href="module-Layout.html">Layout</a></li><li><a href="module-LoadingPage.html">LoadingPage</a></li><li><a href="module-NavAccordion.html">NavAccordion</a></li><li><a href="module-NavMenu.html">NavMenu</a></li><li><a href="module-Page.html">Page</a></li><li><a href="module-Topbar.html">Topbar</a></li></ul></div><div class="category"><h2>Page</h2><h3>Modules</h3><ul><li><a href="module-loading.html">loading</a></li></ul></div><div class="category"><h2>Pages</h2><h3>Modules</h3><ul><li><a href="module-index.html">index</a></li></ul></div><div class="category"><h2>Styling</h2><h3>Modules</h3><ul><li><a href="module-Color.html">Color</a></li><li><a href="module-Global.html">Global</a></li><li><a href="module-Measures.html">Measures</a></li><li><a href="module-Styles.html">Styles</a></li></ul></div><div class="category"><h2>Utilities</h2><h3>Modules</h3><ul><li><a href="module-camelize.html">camelize</a></li><li><a href="module-useOutsideClickListener.html">useOutsideClickListener</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/data/InventoryProgress.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module InventoryProgress
+ * @category Data
+ * @description A progress bar component for inventory data
+ */
+
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import camelize from "libs/camelize";
+import c from "styles/color";
+import m from "styles/measures";
+import s from "styles/styles";
+import Column from "components/containers/Column";
+import InventoryTooltip from "components/data/InventoryTooltip";
+import Row from "components/containers/Row";
+
+const ProgressBackgroundDiv = styled.div.attrs((props) => ({
+  id: `${camelize(props.label)}ProgressBackgroundDiv`,
+}))`
+  position: relative;
+  width: 7rem;
+  height: 1.2rem;
+  align-items: flex-start;
+  margin: ${m.sp3} ${m.sp3};
+  background-color: ${c.gray7};
+  border-radius: ${s.borderRadius};
+  box-shadow: ${s.elev1};
+  cursor: default;
+`;
+
+const ProgressContainer = styled(Row).attrs((props) => ({
+  label: `${camelize(props.label)}ProgressContainer`,
+}))`
+  align-items: center;
+  color: ${c.gray6};
+  font-size: ${m.sp5};
+  &amp;&amp; p {
+    margin: 0 ${m.sp3};
+  }
+`;
+
+const ProgressValueSpan = styled.span.attrs((props) => ({
+  id: `${camelize(props.label)}ProgressValueSpan`,
+}))`
+  display: inline-block;
+  overflow: visible;
+  width: ${(props) =>
+    props.value &lt;= props.max ? (props.value / props.max) * 100 : 100}%;
+  height: 100%;
+  background-color: ${c.success4};
+  border-radius: ${s.borderRadius};
+  &amp;.warning {
+    background-color: ${c.warning3};
+  }
+  &amp;.danger {
+    background-color: ${c.danger3};
+  }
+  &amp;.supergreen {
+    border-right: 3px solid ${c.success2};
+  }
+`;
+
+const ProgressTooltipOverlay = styled.span.attrs((props) => ({
+  id: `${camelize(props.label)}ProgressTooltipOverlay`,
+}))`
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+`;
+
+/**
+ * React function component
+ *
+ * @param props
+ * @param {string} props.id
+ * @param {Object.&lt;string, number>} props.data Inventory data
+ * @param {string} props.data.item_id Item mnemonic
+ * @param {number} props.data.qty_alarm Critical level
+ * @param {number} props.data.qty_min Reorder level
+ * @param {number} props.data.qty_onhand On hand level
+ * @param {number} props.data.qty_parlvl Par level
+ */
+export default function InventoryProgress(props) {
+  var data = props.data;
+  var label = data.item_id.toLowerCase();
+  var tipId = `${data.item_id.toLowerCase()}InventoryTooltip`;
+  var status = "success";
+  if (data.qty_onhand &lt; data.qty_alarm) {
+    status = "danger";
+  } else if (data.qty_onhand &lt; data.qty_min) {
+    status = "warning";
+  } else if (data.qty_onhand > data.qty_parlvl) {
+    status = "supergreen";
+  }
+  return (
+    &lt;>
+      &lt;ProgressTooltipOverlay label={label} data-for={tipId} data-tip="true">
+        &lt;ProgressContainer label={label} align="center">
+          &lt;Column
+            label={`${label} Progress Minimum`}
+            width="15%"
+            align="flex-end"
+          >
+            &lt;p>0&lt;/p>
+          &lt;/Column>
+          &lt;Column label={`${label} Progress Main`} width="70%">
+            &lt;p
+              style={{
+                fontSize: 14,
+                fontWeight: 400,
+                margin: 0,
+              }}
+            >
+              {data.qty_onhand}
+            &lt;/p>
+            &lt;ProgressBackgroundDiv
+              label={props.label}
+              data-value={data.qty_onhand}
+            >
+              &lt;ProgressValueSpan
+                label={props.label}
+                className={status}
+                max={data.qty_parlvl}
+                value={data.qty_onhand}
+              />
+            &lt;/ProgressBackgroundDiv>
+            &lt;Row
+              label={`${label} Progress Critical and Reorder`}
+              justify="space-between"
+            >
+              &lt;p
+                style={{
+                  width: `${(data.qty_alarm / data.qty_parlvl) * 100 + 3}%`,
+                  textAlign: "right",
+                }}
+              >
+                {data.qty_alarm == 0 ? "" : data.qty_alarm}
+              &lt;/p>
+              &lt;p
+                style={{
+                  width: `${100 - (data.qty_min / data.qty_parlvl) * 100}%`,
+                  marginLeft: 0,
+                  textAlign: "left",
+                }}
+              >
+                {data.qty_min}
+              &lt;/p>
+            &lt;/Row>
+          &lt;/Column>
+          &lt;Column label={`${label} Progress Par`} width="15%">
+            &lt;p>{data.qty_parlvl}&lt;/p>
+          &lt;/Column>
+        &lt;/ProgressContainer>
+      &lt;/ProgressTooltipOverlay>
+      &lt;InventoryTooltip id={tipId} data={props.data} />
+    &lt;/>
+  );
+}
+
+InventoryProgress.propTypes = {
+  data: PropTypes.object,
+  label: PropTypes.string.isRequired,
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+</body>
+</html>

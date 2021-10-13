@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> pages/index.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/coreyjwhite/phetch"
+                        >
+                            Github
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-_app.html">_app</a></li><li><a href="module-_document.html">_document</a></li><li><a href="module-Config.html">Config</a></li><li><a href="module-demoTableData.html">demoTableData</a></li><li><a href="module-Palette.html">Palette</a></li><li><a href="module-Spaces.html">Spaces</a></li><li><a href="module-states.html">states</a></li></ul></div><div class="category"><h2>Containers</h2><h3>Modules</h3><ul><li><a href="module-Card.html">Card</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Lozenge.html">Lozenge</a></li><li><a href="module-Modal.html">Modal</a></li><li><a href="module-Row.html">Row</a></li><li><a href="module-Tooltip.html">Tooltip</a></li></ul></div><div class="category"><h2>Data</h2><h3>Modules</h3><ul><li><a href="module-ControlLevel.html">ControlLevel</a></li><li><a href="module-InventoryProgress.html">InventoryProgress</a></li><li><a href="module-InventorySparkline.html">InventorySparkline</a></li><li><a href="module-InventoryTooltip.html">InventoryTooltip</a></li><li><a href="module-KpiCard.html">KpiCard</a></li><li><a href="module-Table.html">Table</a></li></ul></div><div class="category"><h2>Inputs</h2><h3>Modules</h3><ul><li><a href="module-Button.html">Button</a></li><li><a href="module-Checkbox.html">Checkbox</a></li><li><a href="module-InputLabel.html">InputLabel</a></li><li><a href="module-Select.html">Select</a></li><li><a href="module-Textarea.html">Textarea</a></li><li><a href="module-Textbox.html">Textbox</a></li><li><a href="module-Toggle.html">Toggle</a></li></ul></div><div class="category"><h2>Layout</h2><h3>Modules</h3><ul><li><a href="module-Brand.html">Brand</a></li><li><a href="module-Content.html">Content</a></li><li><a href="module-Layout.html">Layout</a></li><li><a href="module-LoadingPage.html">LoadingPage</a></li><li><a href="module-NavAccordion.html">NavAccordion</a></li><li><a href="module-NavMenu.html">NavMenu</a></li><li><a href="module-Page.html">Page</a></li><li><a href="module-Topbar.html">Topbar</a></li></ul></div><div class="category"><h2>Page</h2><h3>Modules</h3><ul><li><a href="module-loading.html">loading</a></li></ul></div><div class="category"><h2>Pages</h2><h3>Modules</h3><ul><li><a href="module-index.html">index</a></li></ul></div><div class="category"><h2>Styling</h2><h3>Modules</h3><ul><li><a href="module-Color.html">Color</a></li><li><a href="module-Global.html">Global</a></li><li><a href="module-Measures.html">Measures</a></li><li><a href="module-Styles.html">Styles</a></li></ul></div><div class="category"><h2>Utilities</h2><h3>Modules</h3><ul><li><a href="module-camelize.html">camelize</a></li><li><a href="module-useOutsideClickListener.html">useOutsideClickListener</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>pages/index.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @category Pages
+ * @module index
+ */
+
+import { useMemo, useRef, useState } from "react";
+import PropTypes from "prop-types";
+import demoTableData from "libs/demoTableData";
+import states from "libs/states";
+import m from "styles/measures";
+import s from "styles/styles";
+import Button from "components/input/Button";
+import Card from "components/containers/Card";
+import Checkbox from "components/input/Checkbox";
+import Column from "components/containers/Column";
+import ControlLevel from "components/data/ControlLevel";
+import InventoryProgress from "components/data/InventoryProgress";
+import InventorySparkline from "components/data/InventorySparkline";
+import KpiCard from "components/data/KpiCard";
+import Lozenge from "components/containers/Lozenge";
+import Modal from "components/containers/Modal";
+import Page from "components/layout/Page";
+import Palette from "components/Palette";
+import ReactModal from "react-modal";
+import Row from "components/containers/Row";
+import Select from "components/input/Select";
+import Space from "components/Space";
+import Table from "components/data/Table";
+import Textarea from "components/input/Textarea";
+import Textbox from "components/input/Textbox";
+import Toggle from "components/input/Toggle";
+
+export default function Home() {
+  const nullRef = useRef(null);
+  const demoData = useMemo(() => demoTableData, []);
+  const demoColumns = useMemo(
+    () => [
+      {
+        Header: &lt;div style={{ textAlign: "center" }}>Omni&lt;/div>,
+        accessor: "omni_stid",
+        Cell: ({ row }) => {
+          var omni_id = row.original.omni_stid.substring(2);
+          var variant = "";
+          if (omni_id == "CSM") {
+            variant = "danger";
+          }
+          return (
+            &lt;Lozenge label={`${omni_id.toLowerCase()}Omni`} variant={variant}>
+              {omni_id}
+            &lt;/Lozenge>
+          );
+        },
+      },
+      {
+        Header: &lt;div style={{ textAlign: "center" }}>C&lt;/div>,
+        accessor: "ctrl_lvl",
+        Cell: ({ row }) => {
+          return (
+            &lt;ControlLevel
+              label={row.original.item_id.toLowerCase()}
+              ctrl_lvl={row.original.ctrl_lvl}
+            />
+          );
+        },
+      },
+      {
+        Header: "Product",
+        accessor: "rx_disp",
+        Cell: ({ row }) => {
+          let alias = undefined;
+          if (row.original.item_name) {
+            alias = row.original.item_name;
+          }
+          return (
+            &lt;>
+              &lt;p>{row.original.rx_disp}&lt;/p>
+              &lt;p className="italic light">{alias}&lt;/p>
+            &lt;/>
+          );
+        },
+      },
+      {
+        Header: &lt;div style={{ textAlign: "center" }}>Routine&lt;/div>,
+        accessor: "daily_doses",
+        Cell: ({ value }) => {
+          if (!value) {
+            value = "-";
+          }
+          return &lt;div style={{ textAlign: "right" }}>{value}&lt;/div>;
+        },
+      },
+      {
+        Header: &lt;div style={{ textAlign: "center" }}>7-day Avg&lt;/div>,
+        accessor: "xactqty",
+        width: 20,
+        Cell: ({ row }) => {
+          let xactqty = "0";
+          if (row.original.xactqty >= 0.5) {
+            xactqty = row.original.xactqty.toFixed(1);
+          }
+          return (
+            &lt;Column>
+              &lt;InventorySparkline data={row.original.usage} value={xactqty} />
+            &lt;/Column>
+          );
+        },
+      },
+      {
+        Header: &lt;div style={{ textAlign: "center" }}>On Hand&lt;/div>,
+        accessor: "onhandratio",
+        Cell: ({ row }) => {
+          return (
+            &lt;InventoryProgress
+              label={`${row.original.item_id.toLowerCase()}Inventory`}
+              data={row.original}
+            />
+          );
+        },
+      },
+      {
+        Header: (
+          &lt;div style={{ textAlign: "center" }}>
+            Days &lt;br />
+            On Hand
+          &lt;/div>
+        ),
+        accessor: "daysonhand",
+        Cell: ({ value }) => {
+          if (value) {
+            value = value.toFixed(1);
+          }
+          if (value > 100) {
+            value = "-";
+          }
+          if (value &lt; 1) {
+            value = 0;
+          }
+          return &lt;div style={{ textAlign: "right" }}>{value}&lt;/div>;
+        },
+      },
+    ],
+    []
+  );
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  function toggleModal(e) {
+    setModalIsOpen(!modalIsOpen);
+  }
+
+  return (
+    &lt;>
+      &lt;Page pageTitle="Home">
+        &lt;Column label="Kpi Cards">
+          &lt;Row label="Kpi Cards" width={m.col12}>
+            &lt;KpiCard
+              label="Test KPI"
+              showHeading={true}
+              value="21%"
+              danger={14}
+              warning={20}
+              data={[20, 16, 66, 77, 56, 92, 25, 12, 2, 4, 16]}
+            />
+            &lt;KpiCard
+              label="Test KPI"
+              showHeading={true}
+              value={12}
+              danger={14}
+              warning={20}
+            />
+            &lt;KpiCard
+              label="Test KPI"
+              showHeading={true}
+              value={19}
+              danger={14}
+              warning={20}
+            />
+          &lt;/Row>
+        &lt;/Column>
+        &lt;Row label="Form Color and Elevation">
+          &lt;Row
+            label="Form Color and Elevation"
+            width={m.col11}
+            justify="space-between"
+          >
+            &lt;Column label="Sample Form Card" width={m.col6}>
+              &lt;Card
+                label="Sample Form"
+                variant="success"
+                showHeading={true}
+                padding={`${m.sp7} ${m.sp8}`}
+                height={m.col12}
+                width={m.col11}
+              >
+                &lt;Column label="Sample Form" justify="space-between">
+                  &lt;Textbox label="Name" />
+                  &lt;Textbox label="Street Address" />
+                  &lt;Textbox label="City" />
+                  &lt;Row label="State and Zip" justify="space-between">
+                    &lt;Select
+                      label="State"
+                      data={states}
+                      keyLabel="id"
+                      inputRef={nullRef}
+                      valueLabel="text"
+                      nullAllowed={true}
+                      defaultValue={-1}
+                      width={m.col7}
+                    />
+                    &lt;Textbox label="ZIP" width={m.col4} />
+                  &lt;/Row>
+                  &lt;Textarea label="Comments" />
+                  &lt;Checkbox
+                    inputRef={nullRef}
+                    onChange={() => void 0}
+                    label="Checkbox"
+                  >
+                    I accept and agree to the Terms of Use
+                  &lt;/Checkbox>
+                  &lt;Toggle
+                    inputRef={nullRef}
+                    onChange={() => void 0}
+                    label="Toggle"
+                  >
+                    Subscribe me to the weekly newsletter
+                  &lt;/Toggle>
+                  &lt;Row label="Sample Form Buttons" justify="flex-end">
+                    &lt;Button
+                      variant="danger"
+                      text="Danger"
+                      onClick={toggleModal}
+                    />
+                    &lt;Button variant="tertiary" text="Tertiary" />
+                    &lt;Button variant="secondary" text="Secondary" />
+                    &lt;Button text="Primary" type="submit" />
+                  &lt;/Row>
+                &lt;/Column>
+              &lt;/Card>
+            &lt;/Column>
+            &lt;Column
+              label="Color and Elevation"
+              justify="space-between"
+              width={m.col6}
+              height={m.col12}
+            >
+              &lt;Card
+                label="Color"
+                showHeading={true}
+                height={m.col6}
+                width={m.col11}
+              >
+                &lt;Palette />
+              &lt;/Card>
+              &lt;Card
+                label="Elevation"
+                showHeading={true}
+                height={m.col6}
+                width={m.col11}
+              >
+                &lt;Row label="Elevations 1">
+                  &lt;Card label="Elevation 1" elevation={s.elev1}>
+                    &lt;p>1&lt;/p>
+                  &lt;/Card>
+                  &lt;Card label="Elevation 2" elevation={s.elev2}>
+                    &lt;p>2&lt;/p>
+                  &lt;/Card>
+                  &lt;Card label="Elevation 3" elevation={s.elev3}>
+                    &lt;p>3&lt;/p>
+                  &lt;/Card>
+                &lt;/Row>
+                &lt;Row label="Elevations 2">
+                  &lt;Card label="Elevation 4" elevation={s.elev4}>
+                    &lt;p>4&lt;/p>
+                  &lt;/Card>
+                  &lt;Card label="Elevation 5" elevation={s.elev5}>
+                    &lt;p>5&lt;/p>
+                  &lt;/Card>
+                &lt;/Row>
+              &lt;/Card>
+            &lt;/Column>
+          &lt;/Row>
+        &lt;/Row>
+        &lt;Row label="Space">
+          &lt;Space width={m.col10} />
+        &lt;/Row>
+        &lt;Row label="Table">
+          &lt;Table columns={demoColumns} data={demoData} label="Data Table" />
+        &lt;/Row>
+      &lt;/Page>
+      &lt;Modal
+        label="Demo Modal"
+        isOpen={modalIsOpen}
+        onRequestClose={toggleModal}
+        buttons={[
+          &lt;Button
+            variant="danger"
+            text="Close"
+            onClick={toggleModal}
+            autoRightMargin={true}
+          />,
+          &lt;Button variant="tertiary" text="Tertiary" />,
+          &lt;Button variant="secondary" text="Secondary" />,
+          &lt;Button text="OK" />,
+        ]}
+      >&lt;/Modal>
+    &lt;/>
+  );
+}
+
+Home.propTypes = {
+  row: PropTypes.string,
+  value: PropTypes.string,
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+</body>
+</html>

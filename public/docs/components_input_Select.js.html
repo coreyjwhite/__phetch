@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> components/input/Select.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/coreyjwhite/phetch"
+                        >
+                            Github
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-_app.html">_app</a></li><li><a href="module-_document.html">_document</a></li><li><a href="module-Config.html">Config</a></li><li><a href="module-demoTableData.html">demoTableData</a></li><li><a href="module-Palette.html">Palette</a></li><li><a href="module-Spaces.html">Spaces</a></li><li><a href="module-states.html">states</a></li></ul></div><div class="category"><h2>Containers</h2><h3>Modules</h3><ul><li><a href="module-Card.html">Card</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Lozenge.html">Lozenge</a></li><li><a href="module-Modal.html">Modal</a></li><li><a href="module-Row.html">Row</a></li><li><a href="module-Tooltip.html">Tooltip</a></li></ul></div><div class="category"><h2>Data</h2><h3>Modules</h3><ul><li><a href="module-ControlLevel.html">ControlLevel</a></li><li><a href="module-InventoryProgress.html">InventoryProgress</a></li><li><a href="module-InventorySparkline.html">InventorySparkline</a></li><li><a href="module-InventoryTooltip.html">InventoryTooltip</a></li><li><a href="module-KpiCard.html">KpiCard</a></li><li><a href="module-Table.html">Table</a></li></ul></div><div class="category"><h2>Inputs</h2><h3>Modules</h3><ul><li><a href="module-Button.html">Button</a></li><li><a href="module-Checkbox.html">Checkbox</a></li><li><a href="module-InputLabel.html">InputLabel</a></li><li><a href="module-Select.html">Select</a></li><li><a href="module-Textarea.html">Textarea</a></li><li><a href="module-Textbox.html">Textbox</a></li><li><a href="module-Toggle.html">Toggle</a></li></ul></div><div class="category"><h2>Layout</h2><h3>Modules</h3><ul><li><a href="module-Brand.html">Brand</a></li><li><a href="module-Content.html">Content</a></li><li><a href="module-Layout.html">Layout</a></li><li><a href="module-LoadingPage.html">LoadingPage</a></li><li><a href="module-NavAccordion.html">NavAccordion</a></li><li><a href="module-NavMenu.html">NavMenu</a></li><li><a href="module-Page.html">Page</a></li><li><a href="module-Topbar.html">Topbar</a></li></ul></div><div class="category"><h2>Page</h2><h3>Modules</h3><ul><li><a href="module-loading.html">loading</a></li></ul></div><div class="category"><h2>Pages</h2><h3>Modules</h3><ul><li><a href="module-index.html">index</a></li></ul></div><div class="category"><h2>Styling</h2><h3>Modules</h3><ul><li><a href="module-Color.html">Color</a></li><li><a href="module-Global.html">Global</a></li><li><a href="module-Measures.html">Measures</a></li><li><a href="module-Styles.html">Styles</a></li></ul></div><div class="category"><h2>Utilities</h2><h3>Modules</h3><ul><li><a href="module-camelize.html">camelize</a></li><li><a href="module-useOutsideClickListener.html">useOutsideClickListener</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/input/Select.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module Select
+ * @category Inputs
+ * @description A styled select component
+ */
+
+import { useState } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import camelize from "libs/camelize";
+import c from "styles/color";
+import m from "styles/measures";
+import s from "styles/styles";
+import InputLabel from "components/input/InputLabel";
+import Column from "components/containers/Column";
+
+const SelectContainer = styled.div.attrs(props => ({
+  className: "selectContainer",
+  id: `${camelize(props.label)}SelectContainer`
+}))`
+  display: flex;
+  width: 100%;
+  margin: ${m.sp4} 0;
+  cursor: pointer;
+  &amp;&amp;::after {
+    width: ${m.sp5};
+    height: ${m.sp4};
+    align-self: center;
+    margin-right: ${m.sp5};
+    background-color: ${c.primary5};
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    content: "";
+    justify-self: end;
+  }
+`;
+
+const StyledSelect = styled.select.attrs(props => ({
+  className: "select",
+  id: `${camelize(props.label)}Select`,
+  name: camelize(props.label)
+}))`
+  width: 100%;
+  padding: ${m.sp3} ${m.sp4};
+  border: ${s.inactiveBorder};
+  margin: 0 calc(-2 * ${m.sp5}) 0 0;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.03rem;
+  cursor: pointer;
+  outline: none;
+  transition: ${s.inputTransition};
+  &amp;:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px ${c.primary5};
+  }
+  option {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+`;
+
+/**
+ * React function component
+ *
+ * @param props
+ * @param {string} props.label
+ * @param {object[]} props.data - Array of {label:key, label:value} objects
+ * @param {string} props.defaultValue - Can be set to -1 for null if
+ * nullAllowed=true
+ * @param {object} props.inputRef - forwardinputRef
+ * @param {string} props.keyLabel - Data key label
+ * @param {string} props.valueLabel - Data value lavel
+ * @param {string} props.width
+ * @param {boolean} [props.nullAllowed=false]
+ * @param {boolean} [props.showLabel=false] - Display label
+ */
+export default function Select(props) {
+  const [focused, setFocused] = useState(false);
+  return (
+    &lt;Column
+      id={`${camelize(props.label)}Column`}
+      label={props.label}
+      align="flex-start"
+      width={props.width}
+    >
+      {props.showLabel &amp;&amp; &lt;InputLabel focus={focused} label={props.label} />}
+      &lt;SelectContainer
+        onFocus={() => setFocused(true)}
+        onBlur={() => setFocused(false)}
+        label={props.label}
+      >
+        &lt;StyledSelect
+          defaultValue={props.defaultValue}
+          ref={props.inputRef}
+          label={props.label}
+        >
+          {props.nullAllowed &amp;&amp; &lt;option value={null} />}
+          {props.data.map(function(row) {
+            return (
+              &lt;option key={row[props.keyLabel]} value={row[props.keyLabel]}>
+                {row[props.valueLabel]}
+              &lt;/option>
+            );
+          })}
+        &lt;/StyledSelect>
+      &lt;/SelectContainer>
+    &lt;/Column>
+  );
+}
+
+Select.propTypes = {
+  data: PropTypes.array.isRequired,
+  defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  inputRef: PropTypes.object.isRequired,
+  keyLabel: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  nullAllowed: PropTypes.bool,
+  showLabel: PropTypes.bool,
+  valueLabel: PropTypes.string.isRequired,
+  width: PropTypes.string
+};
+
+Select.defaultProps = {
+  nullAllowed: false,
+  showLabel: true,
+  width: "50%"
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+</body>
+</html>
