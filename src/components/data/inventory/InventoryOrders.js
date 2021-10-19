@@ -16,6 +16,7 @@ import Lozenge from "components/containers/Lozenge";
 
 const InventoryOrdersContainer = styled.div.attrs((props) => ({
   id: `${camelize(props.label)}InventoryOrdersContainer`,
+  className: "inventoryOrdersContainer",
 }))`
   display: flex;
   width: 100%;
@@ -55,24 +56,26 @@ export default function InventoryOrders(props) {
   }
   var tipId = `${props.label.toLowerCase()}InventoryOrdersTooltip`;
   return (
-    <>
-      <OrdersTooltipOverlay data-for={tipId} data-tip="true">
-        <InventoryOrdersContainer>
-          {routine > 0 && prn > 0 && (
-            <StyledColumn>
-              <p>{routine}</p>
-              <p>{prn}</p>
-            </StyledColumn>
-          )}
-          {total}
-        </InventoryOrdersContainer>
-      </OrdersTooltipOverlay>
-      <InventoryOrdersTooltip
-        id={tipId}
-        routine={routine}
-        prn={prn}
-        total={total}
-      />
-    </>
+    total && (
+      <>
+        <OrdersTooltipOverlay data-for={tipId} data-tip="true">
+          <InventoryOrdersContainer label={props.label}>
+            {routine > 0 && prn > 0 && (
+              <StyledColumn>
+                <p>{routine}</p>
+                <p>{prn}</p>
+              </StyledColumn>
+            )}
+            {total}
+          </InventoryOrdersContainer>
+        </OrdersTooltipOverlay>
+        <InventoryOrdersTooltip
+          id={tipId}
+          routine={routine}
+          prn={prn}
+          total={total}
+        />
+      </>
+    )
   );
 }

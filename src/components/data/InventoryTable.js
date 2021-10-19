@@ -147,7 +147,7 @@ export default function InventoryTable(props) {
                       crossAxis={false}
                       x="day"
                       y="qty"
-                      interpolation="bundle"
+                      interpolation="cardinal"
                       style={{
                         data: {
                           stroke: colord(c.primary5).toHex(),
@@ -171,6 +171,8 @@ export default function InventoryTable(props) {
                     padding={{ top: 0, bottom: 20, left: 40, right: 30 }}
                   >
                     <VictoryAxis
+                      fixLabelOverlap={true}
+                      standalone={false}
                       tickFormat={(t) =>
                         DateTime.fromISO(t, { zone: "utc" }).toFormat("L/d")
                       }
@@ -191,6 +193,7 @@ export default function InventoryTable(props) {
                       tickFormat={(t) => (t % 1 ? "" : t)}
                       tickLabelComponent={
                         <VictoryLabel
+                          standalone={false}
                           style={{ fontSize: "18px", fontFamily: "Open Sans" }}
                         />
                       }

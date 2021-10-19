@@ -14,9 +14,9 @@ import s from "styles/styles";
 import InputLabel from "components/input/InputLabel";
 import Column from "components/containers/Column";
 
-const SelectContainer = styled.div.attrs(props => ({
+const SelectContainer = styled.div.attrs((props) => ({
   className: "selectContainer",
-  id: `${camelize(props.label)}SelectContainer`
+  id: `${camelize(props.label)}SelectContainer`,
 }))`
   display: flex;
   width: 100%;
@@ -34,10 +34,10 @@ const SelectContainer = styled.div.attrs(props => ({
   }
 `;
 
-const StyledSelect = styled.select.attrs(props => ({
+const StyledSelect = styled.select.attrs((props) => ({
   className: "select",
   id: `${camelize(props.label)}Select`,
-  name: camelize(props.label)
+  name: camelize(props.label),
 }))`
   width: 100%;
   padding: ${m.sp3} ${m.sp4};
@@ -56,6 +56,7 @@ const StyledSelect = styled.select.attrs(props => ({
   option {
     background: rgba(0, 0, 0, 0.3);
     color: #fff;
+    font-family: "Open Sans";
   }
 `;
 
@@ -93,9 +94,10 @@ export default function Select(props) {
           defaultValue={props.defaultValue}
           ref={props.inputRef}
           label={props.label}
+          onChange={props.onChange}
         >
           {props.nullAllowed && <option value={null} />}
-          {props.data.map(function(row) {
+          {props.data.map(function (row) {
             return (
               <option key={row[props.keyLabel]} value={row[props.keyLabel]}>
                 {row[props.valueLabel]}
@@ -118,11 +120,11 @@ Select.propTypes = {
   nullAllowed: PropTypes.bool,
   showLabel: PropTypes.bool,
   valueLabel: PropTypes.string.isRequired,
-  width: PropTypes.string
+  width: PropTypes.string,
 };
 
 Select.defaultProps = {
   nullAllowed: false,
   showLabel: true,
-  width: "50%"
+  width: "50%",
 };

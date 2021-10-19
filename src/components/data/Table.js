@@ -107,7 +107,6 @@ export default function Table(props) {
       showHeading={true}
       {...props}
     >
-      {console.log(getTableProps())}
       <table {...getTableProps()} id={`${camelize(props.label)}Table`}>
         <thead>
           {headerGroups.map((headerGroup) => {

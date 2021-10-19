@@ -239,7 +239,7 @@ def usage_array_df(days):
         .groupby("item_id")
         .apply(f)
         .rename_axis(("item_id", "day"))
-        .drop("item_id", 1)
+        .drop("item_id", axis=1)
         .reset_index()
     )
     # Group by item_id and collapse daily usages to dict
@@ -264,13 +264,12 @@ def usage_array_df(days):
 
 
 class RepackagingResource(Resource):
-    items = repackaging_items
-    omnis = ["ETCPM", "ETCSM"]
-
-    def get(self, items=items, omnis=omnis):
+    def get(self, days):
+        items = repackaging_items
+        omnis = ["ETCPM", "ETCSM"]
         expiration = expiration_subquery(items, omnis)
         onhand = onhand_subquery(items, omnis)
-        usage_df = usage_array_df(7)
+        usage_df = usage_array_df(days)
         query = db.session.query(onhand, expiration.c.expiration).join(
             expiration, expiration.c.item_id == onhand.c.item_id, isouter=True
         )

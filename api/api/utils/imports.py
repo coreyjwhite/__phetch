@@ -87,13 +87,14 @@ def import_mar_admins(file):
             "acct_number",
             "rx_number",
             "order_type",
+            "age",
             "location",
             "prescriber",
         ],
     )
     df["time"] = df["time"].astype(str).str.zfill(4)
     df["date"] = pd.to_datetime(df["date"].astype(str) + " " + df["time"])
-    df = df.drop(columns=["time"])
+    df = df.drop(columns=["time", "age"])
     df.to_sql("meditech_administration", con=engine, index=False, if_exists="append")
 
     return True

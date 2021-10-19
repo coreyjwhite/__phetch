@@ -3,31 +3,22 @@
  * @module inventory/repackaging
  */
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import ReactToPrint from "react-to-print";
 import styled from "styled-components";
 import { DateTime } from "luxon";
 import useSWR from "swr";
 import setApiUrl from "libs/setApiUrl";
-import getSparklineData from "libs/getSparklineData";
 import c from "styles/color";
 import m from "styles/measures";
 import s from "styles/styles";
-import Link from "next/link";
-import Card from "components/containers/Card";
 import Column from "components/containers/Column";
-import ControlLevel from "components/data/ControlLevel";
-import InventoryDays from "components/data/inventory/InventoryDays";
-import InventoryOrders from "components/data/inventory/InventoryOrders";
-import InventoryProgress from "components/data/inventory/InventoryProgress";
-import InventorySparkline from "components/data/inventory/InventorySparkline";
 import InventoryTable from "components/data/InventoryTable";
 import LoadingPage from "components/layout/LoadingPage";
-import Lozenge from "components/containers/Lozenge";
 import Page from "components/layout/Page";
 import PageHeader from "components/layout/PageHeader";
 import Row from "components/containers/Row";
-import KpiCard from "components/data/KpiCard";
+import Select from "components/input/Select";
 import Table from "components/data/Table";
 
 const StyledHeader = styled(PageHeader)`
@@ -37,8 +28,6 @@ const StyledHeader = styled(PageHeader)`
     color: ${c.primary9};
   }
 `;
-
-const repackagingResourceUrl = setApiUrl("omnicell/repackaging/");
 
 function onHandSort(rowA, rowB, id, desc) {
   let a = rowA.values.qty.onhand / rowA.values.qty.parlvl;
@@ -80,14 +69,37 @@ function daysSort(rowA, rowB, id, desc) {
   return 0;
 }
 
+const daysArray = [
+  { period: "7" },
+  { period: 14 },
+  { period: 30 },
+  { period: 60 },
+  { period: 90 },
+];
+
 export default function Repackaging() {
+  const [days, setDays] = useState(7);
+  var repackagingResourceUrl = setApiUrl(`omnicell/repackaging/${days}`);
   const { data: result, error } = useSWR(repackagingResourceUrl);
+
+  async function handleChange(e) {
+    setDays(e.target.value);
+  }
 
   if (error) return <h1>Something went wrong!</h1>;
   if (!result) return <LoadingPage />;
 
   return (
     <Page pageTitle="Repackaging">
+      <Select
+        label="Period"
+        data={daysArray}
+        keyLabel="period"
+        valueLabel="period"
+        onChange={handleChange}
+        defaultValue={days}
+        width={m.col7}
+      />
       <InventoryTable data={result} />
     </Page>
   );

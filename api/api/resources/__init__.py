@@ -27,7 +27,7 @@ def add_resources(api):
     # Omnicell
     add(omnicell.ExceptionsResource, "/omnicell/exceptions/")
     add(omnicell.IVResource, "/omnicell/iv/")
-    add(omnicell.RepackagingResource, "/omnicell/repackaging/")
+    add(omnicell.RepackagingResource, "/omnicell/repackaging/<int:days>")
     add(omnicell.OmniResource, "/omnicell/omnis/<string:omni>")
     add(omnicell.OmnisResource, "/omnicell/omnis/")
     add(omnicell.CensusResource, "/omnicell/census/")
