@@ -100,7 +100,7 @@ export default function Repackaging() {
         defaultValue={days}
         width={m.col7}
       />
-      <InventoryTable data={result} />
+      <InventoryTable data={result} days={days} />
     </Page>
   );
 }

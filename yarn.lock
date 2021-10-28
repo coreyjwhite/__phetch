@@ -813,6 +813,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zxing/browser@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@zxing/browser@npm:0.0.9"
+  dependencies:
+    "@zxing/text-encoding": ^0.9.0
+  peerDependencies:
+    "@zxing/library": ^0.18.5
+  dependenciesMeta:
+    "@zxing/text-encoding":
+      optional: true
+  checksum: 1da98970f717f063a5173f6fe31e1472d5751ad8c7ba682c35a4ec608fd3f62fdb5e4b7cf993d5871129043291836867bcf3600bac86b2c3e392033db5f452d2
+  languageName: node
+  linkType: hard
+
+"@zxing/library@npm:^0.18.6":
+  version: 0.18.6
+  resolution: "@zxing/library@npm:0.18.6"
+  dependencies:
+    "@zxing/text-encoding": ~0.9.0
+    ts-custom-error: ^3.0.0
+  dependenciesMeta:
+    "@zxing/text-encoding":
+      optional: true
+  checksum: 564a25f6245b4fd81b4ce686116bf1fe577daa2aaee4263b4dea3776676482fd3e063ad43783c6378713a4a3dcefd311b6154b6cd43e7be24bb7e7c3e5fec98a
+  languageName: node
+  linkType: hard
+
+"@zxing/text-encoding@npm:^0.9.0, @zxing/text-encoding@npm:~0.9.0":
+  version: 0.9.0
+  resolution: "@zxing/text-encoding@npm:0.9.0"
+  checksum: c23b12aee7639382e4949961304a1294776afaffa40f579e09ffecd0e5e68cf26ef3edd75009de46da8a536e571448755ca68b3e2ea707d53793c0edb2e2c34a
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -6431,6 +6465,8 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "phetch@workspace:."
   dependencies:
+    "@zxing/browser": ^0.0.9
+    "@zxing/library": ^0.18.6
     better-docs: ^2.3.2
     colord: ^2.8.0
     eslint: ^7.32.0
@@ -9015,6 +9051,13 @@ resolve@^2.0.0-next.3:
   version: 1.0.5
   resolution: "trough@npm:1.0.5"
   checksum: d6c8564903ed00e5258bab92134b020724dbbe83148dc72e4bf6306c03ed8843efa1bcc773fa62410dd89161ecb067432dd5916501793508a9506cacbc408e25
+  languageName: node
+  linkType: hard
+
+"ts-custom-error@npm:^3.0.0":
+  version: 3.2.0
+  resolution: "ts-custom-error@npm:3.2.0"
+  checksum: b1d2016de891cecea46a70c4adbaf1e6f7c6178994f72070ee3c218cc1a9e2b12c3011defb8385f15dc03ddfafd8d88ef2c9217e23700fb6e537755f33b9c801
   languageName: node
   linkType: hard
 

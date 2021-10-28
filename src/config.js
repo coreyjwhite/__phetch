@@ -15,6 +15,7 @@ const Config = {
         ["Huddle", "/huddle"],
         ["Status Board", "/status"],
         ["Styles", "/styles"],
+        ["Zebra", "/z"],
       ],
     ],
     [

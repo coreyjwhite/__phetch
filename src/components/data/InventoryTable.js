@@ -115,7 +115,7 @@ export default function InventoryTable(props) {
         },
       },
       {
-        Header: <div style={{ textAlign: "center" }}>7-day Avg</div>,
+        Header: <div style={{ textAlign: "center" }}>{props.days}-day Avg</div>,
         accessor: "usage",
         width: 20,
         Cell: ({ row }) => {
@@ -123,14 +123,7 @@ export default function InventoryTable(props) {
           if (row.original.usage) {
             usage = row.original.usage;
           }
-          const trend = 1;
           var tipId = `${row.original.item_id.toLowerCase()}InventoryUsageTooltip`;
-          var trendIcon = "";
-          if (trend > 0) {
-            trendIcon = "↗";
-          } else if (trend < 0) {
-            trendIcon = "↘";
-          }
           return (
             <>
               <div data-for={tipId} data-tip="true">
@@ -171,7 +164,7 @@ export default function InventoryTable(props) {
                     padding={{ top: 0, bottom: 20, left: 40, right: 30 }}
                   >
                     <VictoryAxis
-                      fixLabelOverlap={true}
+                      tickCount={10}
                       standalone={false}
                       tickFormat={(t) =>
                         DateTime.fromISO(t, { zone: "utc" }).toFormat("L/d")
@@ -180,7 +173,8 @@ export default function InventoryTable(props) {
                         <VictoryLabel
                           angle={-45}
                           style={{ fontSize: "18px", fontFamily: "Open Sans" }}
-                          dx={-20}
+                          dx={-15}
+                          dy={-5}
                         />
                       }
                       style={{
