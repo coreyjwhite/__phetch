@@ -29,3 +29,7 @@ class BaseModel(db.Model):
 
         """
         return db.session.query(*args)
+
+    def as_dict(self):
+        """Return a dict of columns and values."""
+        return {c.name: str(getattr(self, c.name)) for c in self.__table__.columns}

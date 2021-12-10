@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev-api": "cd api && export FLASK_APP=wsgi.py && export FLASK_ENV=development && flask run -h '0.0.0.0'",
+    "dev-api": "next dev & cd api && FLASK_ENV=development && flask run -h '0.0.0.0'",
     "build": "next build",
     "doc": "rm -rf public/docs/ && jsdoc -c jsdoc.json -d public/docs/ src/",
     "start": "next start"

@@ -23,6 +23,7 @@ def add_resources(api):
     add(meditech.UpdateAdminResource, "/meditech/admins/update")
     add(meditech.UpdateFormularyResource, "/meditech/formulary/update")
     add(meditech.UpdateTxResource, "/meditech/tx/update")
+    add(meditech.BehavioralQuery, "/bh")
 
     # Omnicell
     add(omnicell.ExceptionsResource, "/omnicell/exceptions/")

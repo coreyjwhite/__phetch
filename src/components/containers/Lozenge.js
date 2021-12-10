@@ -22,6 +22,7 @@ const StyledSpan = styled.span.attrs((props) => ({
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
   background-color: ${(props) => props.bg};
+  border: 1px solid ${(props) => props.border};
   border-radius: ${m.sp3};
   box-shadow: ${s.elev1};
   color: ${(props) => props.color};
@@ -39,11 +40,6 @@ const StyledSpan = styled.span.attrs((props) => ({
   &.danger {
     background-color: ${c.danger4};
     border-color: ${c.danger4};
-  }
-  &.none {
-    background-color: transparent;
-    border-color: transparent;
-    color: ${c.gray2};
   }
 `;
 
@@ -77,6 +73,7 @@ Lozenge.propTypes = {
 
 Lozenge.defaultProps = {
   bg: c.primary6,
+  border: "transparent",
   color: c.primary9,
   margin: m.sp4,
   padding: m.sp4,

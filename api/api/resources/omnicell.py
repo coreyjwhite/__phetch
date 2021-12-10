@@ -12,6 +12,7 @@ from sqlalchemy import (
     distinct,
     extract,
     func,
+    select,
     text,
 )
 from sqlalchemy.sql.expression import case, cast, literal_column
@@ -38,7 +39,6 @@ repackaging_items = [
     "DIAZ1MLSYR",
     "EPINE2PACK",
     "EPIN30D5DC",
-    "GABAUDCUP",
     "HYDRLUDC",
     "KETOFOL",
     "MANNFILTER",
@@ -163,7 +163,11 @@ def medorder_frequencies_df(items=None):
     frequencies = frequencies_subquery()
     medorders = medorder_subquery(items=items)
     dfo = pd.DataFrame(data=db.session.query(medorders))
+    dfo = dfo.rename(
+        columns={0: "item_id", 1: "frequency", 2: "qty", 3: "prn", 4: "omni_stid"}
+    )
     dff = pd.DataFrame(data=frequencies.all())
+    dff = dff.rename(columns={0: "frequency", 1: "daily_multiplier"})
     # Join orders with frequency data
     df = dfo.merge(dff, how="left", left_on="frequency", right_on="frequency")
     # Calculate daily doses from order quantities and frequency multipliers
@@ -234,6 +238,7 @@ def usage_array_df(days):
         .group_by(cast(OmniXact.time_stamp, Date), OmniXitem.item_id)
     )
     df = pd.DataFrame(data=subquery.all())
+    df = df.rename(columns={0: "item_id", 1: "day", 2: "qty"})
     df = (
         df.set_index("day")
         .groupby("item_id")
@@ -277,10 +282,16 @@ class RepackagingResource(Resource):
         df_onhands = (
             df_onhands.rename(
                 columns={
-                    "qty_onhand": "onhand",
-                    "qty_parlvl": "parlvl",
-                    "qty_min": "min",
-                    "qty_alarm": "alarm",
+                    0: "omni_stid",
+                    1: "item_id",
+                    2: "rx_disp",
+                    3: "alias",
+                    4: "ctrl_lvl",
+                    5: "onhand",
+                    6: "parlvl",
+                    7: "min",
+                    8: "alarm",
+                    9: "expiration",
                 }
             )
             .groupby(
@@ -470,6 +481,7 @@ class PopulationsResource(Resource):
                 )
             ).label("tpn"),
         ).filter(OmniMedOrder.is_active)
+        print(query)
         return serialize(query)
 
 

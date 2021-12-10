@@ -52,6 +52,7 @@ function onHandSort(rowA, rowB, id, desc) {
 }
 
 export default function InventoryTable(props) {
+  const midazolamArray = ["MIDA3.75ML", "MIDA5ML", "MIDA6.25ML", "MIDA7.5ML"];
   const columns = useMemo(
     () => [
       {
@@ -254,6 +255,22 @@ export default function InventoryTable(props) {
             return DateTime.fromISO(row.values.expiration).toFormat("M/d/yy");
           }
           return "";
+        },
+      },
+      {
+        accessor: "item_id",
+        Cell: ({ row }) => {
+          if (midazolamArray.includes(row.original.item_id)) {
+            return (
+              <img
+                src="/icons/calculator-line.svg"
+                onClick={toggleMidazolamModal}
+                style={{ cursor: "pointer" }}
+              />
+            );
+          } else {
+            return null;
+          }
         },
       },
     ],
